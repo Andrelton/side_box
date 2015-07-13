@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'shares#index'
 
+  get '/:share', to: 'shares#show'
+
   resources :shares
   resources :users
 

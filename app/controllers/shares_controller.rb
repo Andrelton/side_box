@@ -3,4 +3,8 @@ class SharesController < ApplicationController
     @shares = Share.all
   end
 
+  def show
+    render plain: params.inspect
+  end
+
 end

@@ -17,13 +17,20 @@ ActiveRecord::Schema.define(version: 20150713025154) do
   enable_extension "plpgsql"
 
   create_table "shares", force: true do |t|
+    t.string   "title",       null: false
+    t.text     "description", null: false
+    t.string   "link",        null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "username",      null: false
+    t.string   "password_hash", null: false
+    t.string   "first_name",    null: false
+    t.string   "email",         null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end
