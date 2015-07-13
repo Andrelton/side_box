@@ -2,6 +2,7 @@ class SharesController < ApplicationController
   def index
     @shares = Share.all
     @share = Share.new
+    render text: "", layout: true
   end
 
   def show

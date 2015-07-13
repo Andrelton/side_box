@@ -1,6 +1,17 @@
+var Content = React.createClass({
+
+  render: function() {
+    return (
+      <div className="main-content">
+        <ShareForm />
+      </div>
+    );
+  }
+});
+
 $(function() {
   React.render(
-    <ShareForm />,
+    <Content />,
     document.querySelector('#content')
   )
 });
