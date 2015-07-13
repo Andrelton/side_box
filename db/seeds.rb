@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create(
+  username: "Andrelton",
+  password: "dbc",
+  first_name: "Eric",
+  email: "eric@party.biz"
+)
+
+Share.create(
+  user_id: 1,
+  path: "atomic",
+  title: "Atomic CSS Cheat Sheet",
+  link: "http://docs.emmet.io/cheat-sheet/"
+)
+
+Share.create(
+  user_id: 1,
+  path: "puppies",
+  title: "lebron article",
+  link: "http://espn.go.com/nba/story/_/id/13245985/lebron-james-cleveland-cavaliers-says-nightmares-nba-finals-loss",
+)

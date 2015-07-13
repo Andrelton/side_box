@@ -6,10 +6,35 @@
   font-weight: bold;
 }
 
+.font-helv {
+  font-family: Helvetica, sans-serif;
+}
+
+.fc-grey {
+  color: #999999;
+}
+
+.fc-blue {
+  color: #10ADED;
+}
+
+.ta-c {
+  text-align: center;
+}
+
 .mg-no {
   margin: 0px;
 }
+.mt-no {
+  margin-top: 0px;
+}
 
-.font-helv {
-  font-family: Helvetica, sans-serif;
+div.wrapper {
+  width: 50%;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  font-size: 2em;
 }
