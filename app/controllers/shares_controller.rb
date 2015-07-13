@@ -10,15 +10,15 @@ class SharesController < ApplicationController
     @shares = Share.where(path: params[:path])
   end
 
-  # private
+  def create
+    @share = Share.new(share_params)
+  end
 
-  #   def share_path
-  #     @share = Share.where(path: params[:path])
-  #     if @share.length == 1
-  #       return @share.first
-  #     else
-  #       return @share
-  #     end
-  #   end
+  private
+    def share_params
+      params.reqire(:share).permit(
+        :user_id, :path, :link, :title, :description
+      )
+    end
 
 end

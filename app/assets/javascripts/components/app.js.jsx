@@ -13,5 +13,6 @@ $(function() {
   React.render(
     <Content />,
     document.querySelector('#content')
-  )
+  );
+  $('form input:first-child').focus();
 });
