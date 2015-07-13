@@ -1,0 +1,14 @@
+<%= form_for @share do |f| %>
+  <%= f.text_field :path, placeholder: "side box location:",
+      class: "fc-blue" %>
+  <%= f.text_field :link, placeholder: "Link:",
+      class: "fc-blue" %><br>
+
+    <p class="ta-c mt-no fc-grey">
+      <em>Example:</em> If you choose the location "apple-party",<br>
+      it can be found at "sidebox.com/apple-party".
+    </p>
+
+  <%= f.text_field :title, placeholder: "Title: (Optional)" %>
+  <%= f.text_field :description, placeholder: "Description: (Optional)" %>
+<% end %>
