@@ -17,9 +17,10 @@ ActiveRecord::Schema.define(version: 20150713033206) do
   enable_extension "plpgsql"
 
   create_table "shares", force: true do |t|
-    t.string   "title",       null: false
-    t.text     "description", null: false
-    t.string   "link",        null: false
+    t.string   "title"
+    t.text     "description"
+    t.string   "link"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "path"

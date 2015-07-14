@@ -3,7 +3,7 @@ var Content = React.createClass({
   render: function() {
     return (
       <div className="main-content">
-        <ShareForm />
+        <ShareContent />
       </div>
     );
   }

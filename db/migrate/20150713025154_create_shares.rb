@@ -3,11 +3,11 @@ class CreateShares < ActiveRecord::Migration
     create_table :shares do |t|
       t.string :title
       t.text :description
-      t.string :link, null: false
+      t.string :link
 
       t.integer :user_id
 
-      t.timestamps, null: false
+      t.timestamps
     end
   end
 end

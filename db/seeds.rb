@@ -1,6 +1,6 @@
 User.create(
   username: "Andrelton",
-  password: "dbc",
+  password_hash: "dbc",
   first_name: "Eric",
   email: "eric@party.biz"
 )

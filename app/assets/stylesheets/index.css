@@ -37,6 +37,10 @@
   margin-top: 0px;
 }
 
+.mt-md {
+  margin-top: 0.5em;
+}
+
 html, body {
   height: 100%;
 }
@@ -62,3 +66,32 @@ form input {
   width: 100%;
   font-size: 2em;
 }
+
+input[type=submit] {
+  color: #FFF;
+  background-color: #10ADED;
+  border: 0px;
+  font-size: 3em;
+  border-radius: 10px;
+}
+
+div.submitButton {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #DE1E7E;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:before {
+  content: '\2609';
+}
+
