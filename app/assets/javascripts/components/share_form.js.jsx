@@ -71,7 +71,6 @@ var ShareContent = React.createClass({
         {this.displayForm()}
         <p className="ta-c">
           <ShowFormButton handleClick={this.changeFormDisplay} /><br />
-          <DisplayHelpButton />
         </p>
         <h3>Recent Shares in your circle:</h3>
         <ul>
@@ -82,40 +81,7 @@ var ShareContent = React.createClass({
   }
 });
 
-var DisplayHelpButton = React.createClass({
-  getInitialState: function() {
-    return {
-      showHelp: false
-    }
-  },
 
-  toggleDisplay: function() {
-    this.setState({ showHelp: !this.state.showHelp });
-  },
-
-  showHelpInfo: function() {
-    if (this.state.showHelp) {
-      return (
-        <p className="ta-c mt-no">
-          <em>Example:</em> If you choose the location "apple-party",<br/>
-          your link can be found at "sidebox.com/apple-party".
-        </p>
-        );
-    } else {
-      return null;
-    };
-  },
-
-  render: function() {
-    return (
-      <div className="ta-c">
-        <button onClick={this.toggleDisplay}>Show Help</button>
-        {this.showHelpInfo()}
-        {this.state.showHelp}
-      </div>
-    )
-  }
-});
 
 var Share = React.createClass({
 
@@ -150,7 +116,7 @@ var ShowFormButton = React.createClass({
 
   render: function() {
     return (
-      <button onClick={this.handleClick}>
+      <button className="display-form" onClick={this.handleClick}>
       {this.state.buttonText}</button>
     )
   }
@@ -187,4 +153,39 @@ var ShareForm = React.createClass({
     );
   }
 });
+
+/*var DisplayHelpButton = React.createClass({
+  getInitialState: function() {
+    return {
+      showHelp: false
+    }
+  },
+
+  toggleDisplay: function() {
+    this.setState({ showHelp: !this.state.showHelp });
+  },
+
+  showHelpInfo: function() {
+    if (this.state.showHelp) {
+      return (
+        <p className="ta-c mt-no">
+          <em>Example:</em> If you choose the location "apple-party",<br/>
+          your link can be found at "sidebox.com/apple-party".
+        </p>
+        );
+    } else {
+      return null;
+    };
+  },
+
+  render: function() {
+    return (
+      <div className="ta-c">
+        <button onClick={this.toggleDisplay}>Show Help</button>
+        {this.showHelpInfo()}
+        {this.state.showHelp}
+      </div>
+    )
+  }
+});*/
 

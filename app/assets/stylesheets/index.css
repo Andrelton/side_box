@@ -18,6 +18,10 @@
   font-family: Helvetica, sans-serif;
 }
 
+.fc-white {
+  color: #000;
+}
+
 .bc-green {
   background-color: #BADA55;
 }
@@ -83,6 +87,12 @@ div.submitButton {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+button.display-form {
+  border: 0px;
+  background-color: #EBEBEB;
+  font-weight: bold;
 }
 
 a {
