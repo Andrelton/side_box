@@ -1,7 +1,7 @@
 class SharesController < ApplicationController
   def index
     p params
-    @shares = Share.all
+    @shares = Share.order('created_at desc')
     @share = Share.new
 
     respond_to do |format|
@@ -12,8 +12,9 @@ class SharesController < ApplicationController
 
   def show
     p "***********in show************"
-    @shares = Share.where(path: params[:path])
-
+    p params[:share]
+    @shares = Share.where(path: params[:share])
+    p @shares
   end
 
   def create

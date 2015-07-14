@@ -1,4 +1,11 @@
-<% @shares.each do |share| %>
-  <p><%= share.title %></p>
-  <p><a href="<%= share.link %>"</p>
-<% end %>
+<div class="bc-green">
+  <% @shares.each do |share| %>
+    <p class="ta-c">
+      <span class="fw-b">Here's Your Link!<span></br>
+      <a class="ta-c fz-m" href="<%= share.link %>">
+        <%= share.title.length > 1 ? share.title : share.link %>
+      </a>
+    </p>
+  <% end %>
+</div>
+
