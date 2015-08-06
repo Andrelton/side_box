@@ -70,7 +70,7 @@ var ShareContent = React.createClass({
       <div>
         {this.displayForm()}
         <p className="ta-c">
-          <ShowFormButton handleClick={this.changeFormDisplay} /><br />
+          <ShowFormButton formShown={this.state.showForm} handleClick={this.changeFormDisplay} /><br />
         </p>
         <h3>Recent Shares in your circle:</h3>
         <ul>
@@ -80,7 +80,6 @@ var ShareContent = React.createClass({
     )
   }
 });
-
 
 
 var Share = React.createClass({
@@ -99,27 +98,20 @@ var Share = React.createClass({
 });
 
 var ShowFormButton = React.createClass({
-  getInitialState: function() {
-    return {
-      buttonText: "Hide Form"
-    }
-  },
 
-  handleClick: function() {
-    if (this.state.buttonText == "Hide Form") {
-      this.setState({ buttonText: "Show 'New Share' Form"});
-    } else {
-      this.setState({ buttonText: "Hide Form"})
-    };
-    this.props.handleClick();
+  propTypes: {
+    formShown: React.PropTypes.bool.isRequired,
+    handleClick: React.PropTypes.func.isRequired
   },
 
   render: function() {
     return (
-      <button className="display-form" onClick={this.handleClick}>
-      {this.state.buttonText}</button>
+      <button className="display-form" onClick={this.props.handleClick}>
+        {this.props.formShown ? "Hide Form" : "Show 'New Share' Form" }
+      </button>
     )
   }
+
 });
 
 var ShareForm = React.createClass({
