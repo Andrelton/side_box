@@ -126,8 +126,8 @@ var ShareForm = React.createClass({
         <p className="ta-c fz-m fw-b">Choose a location and share your link!<br />
         sidebox.com/...</p>
         <form onSubmit={this.handleSubmit} method="POST" action="/shares">
-          <input className="fc-blue" name="share[path]" type="text" placeholder="side box - location:" />
-          <input className="fc-blue" name="share[link]" type="text" placeholder="Link:" /><br />
+          <input className="fc-blue" name="share[path]" type="text" placeholder="side box location:" />
+          <input className="fc-blue" name="share[link]" type="text" placeholder="link:" /><br />
 
             {/*<p className="ta-c mt-no fc-white">
               <em>Example:</em> If you choose the location <span className="fc-black">"apple-party",</span><br/>
