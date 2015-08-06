@@ -1,0 +1,1 @@
+var Content=React.createClass({displayName:"Content",render:function(){return React.createElement("div",{className:"main-content"},React.createElement(ShareContent,null))}});$(function(){React.render(React.createElement(Content,null),document.querySelector("#content")),$("form input:first-child").focus()});
