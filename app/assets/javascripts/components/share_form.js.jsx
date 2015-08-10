@@ -72,7 +72,7 @@ var ShareContent = React.createClass({
         <p className="ta-c">
           <ShowFormButton formShown={this.state.showForm} handleClick={this.changeFormDisplay} /><br />
         </p>
-        <h3>Recent Shares in your circle:</h3>
+        <h3>Recent shares:</h3>
         <ul>
           {shares}
         </ul>
