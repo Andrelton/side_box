@@ -11,4 +11,10 @@ Future goals for this project:
 
 Please fork and contribute!
 
+Choose a path to make sharing easy, paste a link, and add optional information:
+
 ![create side box share](app/assets/images/create.jpg)
+
+Share the link by giving the Side Box url to a friend:
+
+![create side box share](app/assets/images/view.jpg)
