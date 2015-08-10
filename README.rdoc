@@ -8,5 +8,7 @@ Future goals for this project:
 1. Add optional login functionality.
 2. Add expiration and share-relevancy features.
 3. Add hover/popup information for past shares.
+/app/assets/images/create.jpg
 
 Please fork and contribute!
+![create a side box share](http://www.ansi.okstate.edu/breeds/horses/dales/dales.jpg)
