@@ -11,6 +11,4 @@ Future goals for this project:
 
 Please fork and contribute!
 
-![create a side box share](app/assets/images/create.jpg)
-
-
+![create a side box share](/app/assets/images/create.jpg)
