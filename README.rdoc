@@ -1,5 +1,12 @@
 == README
 
-This is an app that will help with React JS practice.
+Welcome to Side Box! Side Box helps you share URLs face-to-face. Paste a long URL and choose an easy path for sharing (e.g. ‘…com/mongo-article’). 
 
-Feel free to fork and contribute!
+As is standard for the 'react-rails' gem, all React component files can be found in the 'javascripts/components' directory.
+
+Future goals for this project:
+1. Add optional login functionality.
+2. Add expiration and share-relevancy features.
+3. Add hover/popup information for past shares.
+
+Please fork and contribute!
