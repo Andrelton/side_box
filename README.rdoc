@@ -1,6 +1,6 @@
 == README
 
-Welcome to Side Box! Side Box helps you share URLs face-to-face. Paste a long URL and choose an easy path for sharing (e.g. ‘…com/mongo-article’). 
+Welcome to Side Box! Side Box helps you share URLs face-to-face. Simply paste a long URL and choose an easy path (e.g. ‘…com/mongo-article’) for sharing the link.
 
 As is standard for the 'react-rails' gem, all React component files can be found in the 'javascripts/components' directory.
 
