@@ -137,7 +137,7 @@ var ShareForm = React.createClass({
           </div>
         </div>
         <form onSubmit={this.handleSubmit} method="POST" action="/shares">
-          <input className="fc-blue" name="share[path]" type="text" placeholder="side box location:" />
+          <input className="fc-blue" name="share[path]" type="text" placeholder="location:" />
           <input className="fc-blue" name="share[link]" type="text" placeholder="link:" /><br />
 
             {/*<p className="ta-c mt-no fc-white">
