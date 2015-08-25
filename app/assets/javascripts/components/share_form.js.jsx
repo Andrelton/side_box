@@ -123,8 +123,19 @@ var ShareForm = React.createClass({
   render: function() {
     return (
       <div className="new-share-form">
-        <p className="ta-c fz-m fw-b">Choose a location and share your link!<br />
-        sidebox.com/...</p>
+        <div>
+        <div>
+          <div className="instructions ta-c fw-b">
+            1. Choose a location! Use something easy to say, like 'pancake-party'.
+          </div>
+          <div className="instructions ta-c fw-b">
+            2. Paste a link! Share the cool thing you found, optionally add a title and description, and create.
+          </div>
+          <div className="instructions ta-c fw-b">
+            3. Tell someone near you to find to find your long URL link at sidebox.herokuapp.com/ pancake-party.
+          </div>
+          </div>
+        </div>
         <form onSubmit={this.handleSubmit} method="POST" action="/shares">
           <input className="fc-blue" name="share[path]" type="text" placeholder="side box location:" />
           <input className="fc-blue" name="share[link]" type="text" placeholder="link:" /><br />

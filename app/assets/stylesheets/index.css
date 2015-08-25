@@ -57,6 +57,8 @@ html, body {
 body {
   background-image: url('dock.jpeg');
   background-size: cover;
+/*  background-repeat: no-repeat;
+  background-position: fixed;*/
 }
 
 div.wrapper {
@@ -110,4 +112,10 @@ li:before {
   content: '\2609';
 }
 
-
+div.instructions {
+  display: inline-block;
+  width: 33%;
+  /*border: 1px dotted red;*/
+  vertical-align: top;
+  margin-bottom: 1em;
+}
